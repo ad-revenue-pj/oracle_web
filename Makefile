@@ -1,3 +1,5 @@
+USER = $(shell whoami)
+
 echo:
 	@echo 'hoge'
 
@@ -10,3 +12,10 @@ install:
 	@sudo cp -r ./html/* /var/www/html/
 	@sudo cp -r ./src /var/www/html/
 	@sudo cp -r ./vendor /var/www/html/
+
+dev_install:
+	@sudo mkdir -p /var/www/html/$(USER)
+	@sudo rm -rf /var/www/html/$(USER)/*
+	@sudo cp -r ./html/* /var/www/html/$(USER)/
+	@sudo cp -r ./src /var/www/html/$(USER)/
+	@sudo cp -r ./vendor /var/www/html/$(USER)/
