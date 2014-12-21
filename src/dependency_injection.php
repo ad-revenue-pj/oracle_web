@@ -12,6 +12,6 @@ $app->container['log'] = function ($c) {
 };
 
 $app->container['twig'] = function ($c) {
-    $loader = new Twig_Loader_Filesystem('/var/www/html/src/templates');
+    $loader = new Twig_Loader_Filesystem('src/templates');
     return new Twig_Environment($loader);
 };
