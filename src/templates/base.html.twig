@@ -16,50 +16,50 @@
         <![endif]-->
     </head>
     <body>
-    {% block header %}
-    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;border-color:black;">
-    </div>
-    <header class="jumbotron subhead">
+        {% block header %}
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;border-color:black;">
+        </div>
+        <header class="jumbotron subhead">
         <div class="container">
             <h1>Oracle Reference</h1>
             <p class="lead"></p>
         </div>
-    </header>
-    {% endblock %}
+        </header>
+        {% endblock %}
 
-    {% block menu %}
-    <div class="container">
-        <div class="row">
-            <div class="span3 bs-docs-sidebar">
-                <ul class="nav nav-list bs-docs-sidenav">
-                    <li><a href="#sum"><i class="icon-chevron-right"></i> SUM</a></li>
-                    <li><a href="#trim"><i class="icon-chevron-right"></i> TRIM</a></li>
-                    <li><a href="#hoge"><i class="icon-chevron-right"></i> HOGE</a></li>
-                    <li><a href="#hohi"><i class="icon-chevron-right"></i> HOHI</a></li>
-                </ul>
-            </div>
-            <div class="span8"> 
-                {% block contents %}
-                <div>
-                    デフォルトコンテンツ
+        {% block menu %}
+        <div class="container">
+            <div class="row">
+                <div class="span3 bs-docs-sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav">
+                        <li><a href="#sum"><i class="icon-chevron-right"></i> SUM</a></li>
+                        <li><a href="#trim"><i class="icon-chevron-right"></i> TRIM</a></li>
+                        <li><a href="#hoge"><i class="icon-chevron-right"></i> HOGE</a></li>
+                        <li><a href="#hohi"><i class="icon-chevron-right"></i> HOHI</a></li>
+                    </ul>
                 </div>
-                {% endblock contents %}
+                <div class="span8"> 
+                    {% block contents %}
+                    <div>
+                        デフォルトコンテンツ
+                    </div>
+                    {% endblock contents %}
+                </div>
             </div>
         </div>
-    </div>
-    {% endblock menu %}
+        {% endblock menu %}
 
-    {% block footer %}
-    <footer class="footer">
+        {% block footer %}
+        <footer class="footer">
         <div class="container">
             Someone famous in <cite title="Source Title">Source Title</cite>
         </div>
-    </footer>
-    {% endblock footer %}
+        </footer>
+        {% endblock footer %}
 
-    <!-- script references -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/scripts.js"></script>
-</body>
+        <!-- script references -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
 </html>
