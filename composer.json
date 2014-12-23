@@ -3,6 +3,7 @@
         "monolog/monolog": "1.2.*",
         "slim/slim": "2.*",
         "slim/extras": "2.*",
+	"michelf/php-markdown": "1.4.0",
         "twig/twig": "1.*"
     }
 }
