@@ -5,9 +5,17 @@ $app->get('/', function () use ($app) {
     echo $app->twig->render('index.html.twig');
 });
 
-$app->get('/contents/:title', function ($title) use ($app) {
+$app->get('/contents/:parent', function ($parent) use ($app) {
     try {
-        echo $app->twig->render('contents.html.twig', array('title' => $title));
+        echo $app->twig->render('contents-parent.html.twig', array('parent' => $parent));
+    } catch (\Exception $e) {
+        echo $app->twig->render('notfound.html.twig');
+    }
+});
+
+$app->get('/contents/:parent/:child', function ($parent, $child) use ($app) {
+    try {
+        echo $app->twig->render('contents-child.html.twig', array('parent' => $parent, 'child' => $child));
     } catch (\Exception $e) {
         echo $app->twig->render('notfound.html.twig');
     }
