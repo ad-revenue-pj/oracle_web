@@ -1,0 +1,90 @@
+<h1>HAVING句</h1>
+
+<h3>説明</h3>
+<pre>
+SELECT
+    カラム名のリスト
+FROM
+    テーブル名
+GROUP BY
+    カラム名のリスト
+HAVING
+    カラム名 検索条件
+</pre>
+<kbd>HAVING</kbd>はグルーピングしたカラムに検索条件を指定します。
+
+<h3>サンプル</h3>
+<table class="table">
+<caption>身体測定テーブル</caption>
+<tbody>
+  <tr>
+    <td>No</td>
+    <td>クラス</td>
+    <td>身長(cm)</td>
+    <td>体重(kg)</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>ぞう</td>
+    <td>163</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>ぞう</td>
+    <td>170</td>
+    <td>95</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>きりん</td>
+    <td>168</td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>きりん</td>
+    <td>168</td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>きりん</td>
+    <td>180</td>
+    <td>65</td>
+  </tr>
+</tbody>
+</table>
+<pre>
+SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス);
+
+クラス  MAX(体重)
+-----  -----
+きりん  70
+ぞう    95
+
+SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス)
+   2 HAVING MAX(体重) > 80;
+
+クラス  MAX(体重)
+-----  -----
+ぞう    95
+
+-- WHERE句でも同じ検索結果が得られます
+SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス)
+   2 WHERE 体重 > 80;
+
+クラス  MAX(体重)
+-----  -----
+ぞう    95
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-2"><a href="group-by">GROUP BY句</a></td>
+    <td class="col-md-10">- 指定したカラムでグループ化する</td>
+  </tr>
+</tbody>
+</table>

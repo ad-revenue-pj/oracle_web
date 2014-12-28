@@ -1,0 +1,81 @@
+<h1>GROUP BY句</h1>
+
+<h3>説明</h3>
+<pre>
+SELECT
+    カラム名のリスト
+FROM
+    テーブル名
+GROUP BY
+    カラム名のリスト
+</pre>
+<kbd>GROUP BY</kbd>は指定したカラムで検索結果をグルーピングします。
+
+<h3>サンプル</h3>
+<table class="table">
+<caption>身体測定テーブル</caption>
+<tbody>
+  <tr>
+    <td>No</td>
+    <td>クラス</td>
+    <td>身長(cm)</td>
+    <td>体重(kg)</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>ぞう</td>
+    <td>163</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>ぞう</td>
+    <td>170</td>
+    <td>95</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>きりん</td>
+    <td>168</td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>きりん</td>
+    <td>168</td>
+    <td>70</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>きりん</td>
+    <td>180</td>
+    <td>65</td>
+  </tr>
+</tbody>
+</table>
+<pre>
+SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス);
+
+クラス  MAX(体重)
+-----  -----
+きりん  70
+ぞう    95
+</pre>
+
+<h3>注意</h3>
+GROUP BY句を使用する場合、検索対象にグループ化していないカラムを追加することができません。
+<pre>
+SQL> SELECT クラス, 身長 FROM 身体測定 GROUP BY (クラス);
+
+-- エラーになります。
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-2"><a href="having">HAVING句</a></td>
+    <td class="col-md-10">- グループ化されたカラムに条件を指定する</td>
+  </tr>
+</tbody>
+</table>
