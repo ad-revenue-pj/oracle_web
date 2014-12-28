@@ -19,7 +19,7 @@ $app = new Application(array(
 $app = new Application();
 
 //require __DIR__.DIRECTORY_SEPARATOR.'dependency_injection.php';
-require 'src/dependency_injection.php';
+require 'dependency_injection.php';
 
 /*
 $app->log->setWriter($app->log);
