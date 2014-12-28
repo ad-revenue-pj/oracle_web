@@ -1,24 +1,28 @@
-<h1>AVG</h1>
+<h1>MAX</h1>
 
 <h3>説明</h3>
-<pre>AVG (n)</pre>
-<kbd>AVG</kbd>はnの平均値を返します。
+<pre>MAX (n)</pre>
+<kbd>MAX</kbd>はnの最大値を返します。
 
 <h3>サンプル</h3>
 <pre>
-SQL> SELECT AVG(給料) FROM 社員;
+SQL> SELECT MAX(給料) FROM 社員;
 
 SUM(給与)
 ---------
- 3000000
+ 3000000000
 </pre>
 
 <h3>参考</h3>
 <table class="table table-striped">
 <tbody>
   <tr>
-    <td class="col-md-1"><a href="sum">SUM</a></td>
-    <td class="col-md-11">- 合計値を求める</td>
+    <td class="col-md-1"><a href="min">MIN</a></td>
+    <td class="col-md-11">- 最小値を求める</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="avg">AVG</a></td>
+    <td class="col-md-11">- 平均値を求める</td>
   </tr>
   <tr>
     <td class="col-md-1"><a href="stddev">STDDEV</a></td>
