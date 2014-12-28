@@ -14,8 +14,8 @@ HAVING
 <kbd>HAVING</kbd>はグルーピングしたカラムに検索条件を指定します。
 
 <h3>サンプル</h3>
-<table class="table">
 <caption>身体測定テーブル</caption>
+<table class="table table-bordered table-striped table-condensed">
 <tbody>
   <tr>
     <td>No</td>
@@ -56,14 +56,14 @@ HAVING
 </tbody>
 </table>
 <pre>
-SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス);
+SQL> SELECT クラス, MAX(体重) FROM 身体測定 GROUP BY (クラス);
 
 クラス  MAX(体重)
 -----  -----
 きりん  70
 ぞう    95
 
-SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス)
+SQL> SELECT クラス, MAX(体重) FROM 身体測定 GROUP BY (クラス)
    2 HAVING MAX(体重) > 80;
 
 クラス  MAX(体重)
@@ -71,7 +71,7 @@ SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス)
 ぞう    95
 
 -- WHERE句でも同じ検索結果が得られます
-SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス)
+SQL> SELECT クラス, MAX(体重) FROM 身体測定 GROUP BY (クラス)
    2 WHERE 体重 > 80;
 
 クラス  MAX(体重)

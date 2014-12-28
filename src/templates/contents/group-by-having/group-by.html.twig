@@ -12,14 +12,14 @@ GROUP BY
 <kbd>GROUP BY</kbd>は指定したカラムで検索結果をグルーピングします。
 
 <h3>サンプル</h3>
-<table class="table">
+<table class="table table-bordered table-striped table-condensed">
 <caption>身体測定テーブル</caption>
 <tbody>
   <tr>
-    <td>No</td>
-    <td>クラス</td>
-    <td>身長(cm)</td>
-    <td>体重(kg)</td>
+    <th>No</td>
+    <th>クラス</td>
+    <th>身長(cm)</td>
+    <th>体重(kg)</td>
   </tr>
   <tr>
     <td>1</td>
@@ -54,7 +54,7 @@ GROUP BY
 </tbody>
 </table>
 <pre>
-SQL> SELECT 性別, MAX(体重) FROM 身体測定 GROUP BY (クラス);
+SQL> SELECT クラス, MAX(体重) FROM 身体測定 GROUP BY (クラス);
 
 クラス  MAX(体重)
 -----  -----
