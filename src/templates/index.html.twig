@@ -1,149 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Oracle Reference</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/sidebar_styles.css" rel="stylesheet">
-	</head>
-	<body>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Oracle Reference</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link href="css/sidebar_styles.css" rel="stylesheet">
+    </head>
+    <body>
 
-<header class="navbar navbar-default navbar-static-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">Home</a>
-    </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="#">SQL</a>
-        </li>
-        <li>
-          <a href="#">DBA</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+        <header class="navbar navbar-default navbar-static-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Home</a>
+            </div>
+            <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li>
+                <a href="#">SQL</a>
+                </li>
+                <li>
+                <a href="#">DBA</a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        </header>
 
-<!-- Begin Body -->
-<div class="container">
-	<div class="row">
-  			<div class="col-md-3" id="leftCol">
-              	
-				<div class="well"> 
-              	<ul class="nav nav-stacked" id="sidebar">
-                  <li><a href="#sec1">Section 1</a></li>
-                  <li><a href="#sec2">Section 2</a></li>
-                  <li><a href="#sec3">Section 3</a></li>
-                  <li><a href="#sec4">Section 4</a></li>
-              	</ul>
-  				</div>
+        <!-- Begin Body -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="sec0">Oracle Reference</h2>
+                    <p>
+                    </p>
 
-      		</div>  
-      		<div class="col-md-9">
-              	<h2 id="sec0">Oracle Reference</h2>
-		<p>
-		</p>
-            
-           
-              	<hr class="col-md-12">
-              	
-              	<h2 id="sec1">索引</h2>
-              	<div class="row">
-                  <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading"><h3>SQL</h3></div>
-                      <div class="panel-body">
-			 <div>数値関数</div>
-			 <div>文字関数</div>
-			 <div>汎用関数</div>
-			 <div>変換関数</div>
-			 <div>比較関数</div>
-			 <div>日付関数</div>
-			 <div>グループ関数</div>
-			 <div>副問い合わせ</div>
-                      </div>
+
+                    <hr class="col-md-12">
+
+                    <h2 id="sec1">カテゴリ一覧</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>SQLの実行環境</h5></div>
+                                <div class="panel-body">
+                                    <div>実行環境の確認</div>
+                                    <div>SQL*PLUSの起動</div>
+                                    <div>演算用ユーザの作成</div>
+                                    <div>演算用の表の作成</div>
+                                    <div>表に含まれる列の確認</div>
+                                    <div>SQL分の編集</div>
+                                    <div>置換変数</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>リレーショナルデータベース</h5></div>
+                                <div class="panel-body">
+                                    <div>リレーショナルアプローチ</div>
+                                    <div>リレーショナルデータベースの用語</div>
+                                    <div>SQLとは</div>
+                                    <div>SQL文の記述</div>
+                                    <div>確認問題</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>SQLのSELECT文を使用したデータの取得</h5></div>
+                                <div class="panel-body">
+                                    <div>SELECT文の機能</div>
+                                    <div>SELECT分の基本構文</div>
+                                    <div>算術式</div>
+                                    <div>NULLを含む算術式</div>
+                                    <div>文字列の連結</div>
+                                    <div>代替引用符(q)演算子</div>
+                                    <div>列見出しのデフォルト</div>
+                                    <div>列見出しの設定</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>データの反映およびオート</h5></div>
+                                <div class="panel-body">
+                                    <div>行の選択</div>
+                                    <div>比較条件</div>
+                                    <div>NULL条件</div>
+                                    <div>IS NOT NULL条件</div>
+                                    <div>行の並べ替え(ソート)</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>単一行関数を使用した出力のカスタマイズ</h5></div>
+                                <div class="panel-body">
+                                    <div>関数のタイプ</div>
+                                    <div>数値関数</div>
+                                    <div>文字関数</div>
+                                    <div>日付関数</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>変換関数と条件式の使用方法</h5></div>
+                                <div class="panel-body">
+                                    <div>変換関数</div>
+                                    <div>書式モデル</div>
+                                    <div>RR日付書式</div>
+                                    <div>汎用関数</div>
+                                    <div>条件式</div>
+                                    <div>関数のネスト</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>グループ関数を使用した集計データのレポート</h5></div>
+                                <div class="panel-body">
+                                    <div>グループ関数</div>
+                                    <div>GROUP BY句とHAVING句</div>
+                                    <div>グループ関数のネスト</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>複数の表からのデータ表示</h5></div>
+                                <div class="panel-body">
+                                    <div>結合</div>
+                                    <div>SQL:1999構文を使用した表の結合</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>副問い合わせを使用した問い合わせの解決</h5></div>
+                                <div class="panel-body">
+                                    <div>副問合せの使用方法</div>
+                                    <div>単一行副問合せ</div>
+                                    <div>複数行副問合せ</div>
+                                    <div>NULLを戻す副問合せ</div>
+                                    <div>HAVING句での副問合せ</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>集合演算子の使用</h5></div>
+                                <div class="panel-body">
+                                    <div>集合演算子とは</div>
+                                    <div>UNIONおよびUNION ALL演算子の使用方法</div>
+                                    <div>MINUS演算子の使用方法</div>
+                                    <div>INTERSECT演算子の使用方法</div>
+                                    <div>集合演算子の使用ガイドライン</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>データの操作</h5></div>
+                                <div class="panel-body">
+                                    <div>INSERT分の基本構文</div>
+                                    <div>UPDATE文の基本構文</div>
+                                    <div>DELETE文の基本構文</div>
+                                    <div>TRUNCATE(表切り捨て)文</div>
+                                    <div>副問合せを用いたINSERT文</div>
+                                    <div>副問合せを用いたUPDATE文</div>
+                                    <div>副問合せを用いたDELETE文</div>
+                                    <div>トランザクションとは</div>
+                                    <div>トランザクションを制御するコマンド</div>
+                                    <div>暗黙的なトランザクション処理</div>
+                                    <div>読取りの一貫性</div>
+                                    <div>ロック</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>表の作成と管理</h5></div>
+                                <div class="panel-body">
+                                    <div>データベースオブジェクト</div>
+                                    <div>スキーマ</div>
+                                    <div>表</div>
+                                    <div>データ型</div>
+                                    <div>制約</div>
+                                    <div>NOT NULL制約</div>
+                                    <div>UNIQUE制約</div>
+                                    <div>CHECK制約</div>
+                                    <div>PRIMARY KEY制約</div>
+                                    <div>FOREING KEY(外部キー)制約</div>
+                                    <div>既存表からの新しい表の作成</div>
+                                    <div>表構造の変更</div>
+                                    <div>表の削除</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>表以外のスキーマオブジェクトの作成と管理</h5></div>
+                                <div class="panel-body">
+                                    <div>ビュー</div>
+                                    <div>順序</div>
+                                    <div>索引</div>
+                                    <div>シノニム</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>高度な問い合わせ</h5></div>
+                                <div class="panel-body">
+                                    <div>単一列単一行副問合せ</div>
+                                    <div>インラインビュー</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>ORACLE独自構文を使用した結合</h5></div>
+                                <div class="panel-body">
+                                    <div>結合</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading"><h5>データディクショナリビューによるオブジェクトの管理</h5></div>
+                                <div class="panel-body">
+                                    <div>データディクショナリ</div>
+                                    <div>データディクショナリの問合せ</div>
+                                    <div>表にコメントを追加</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="panel panel-default">
-                      <div class="panel-heading"><h3>DBA</h3></div>
-                      <div class="panel-body">
-			 <div>インストール</div>
-			 <div>コンフィグ</div>
-			 <div>リカバリ</div>
-			 <div>レプリケーション</div>
-                      </div>
+
+                    <h2 id="sec3">おすすめの本</h2>
+                    <div class="row">
+                        <div class="col-md-4"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=sabakaido-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=4797361840" style="width:300px;height:300px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
+                        <div class="col-md-4"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=sabakaido-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=B00APVQ6MA" style="width:300px;height:300px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
+                        <div class="col-md-4"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=sabakaido-22&o=9&p=8&l=as1&asins=4798116610&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:300px;height:300px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
                     </div>
-                  </div>  
-              	</div>
-<!--              
-              	<hr>
-              	<h2 id="sec2">索引</h2>
-              	<div class="row">
-                  <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading"><h3>SQL</h3></div>
-                      <div class="panel-body">
-			 <div>数値関数</div>
-			 <div>文字関数</div>
-			 <div>汎用関数</div>
-			 <div>変換関数</div>
-			 <div>比較関数</div>
-			 <div>日付関数</div>
-			 <div>グループ関数</div>
-			 <div>副問い合わせ</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="panel panel-default">
-                      <div class="panel-heading"><h3>DBA</h3></div>
-                      <div class="panel-body">
-			 <div>インストール</div>
-			 <div>コンフィグ</div>
-			 <div>リカバリ</div>
-			 <div>レプリケーション</div>
-                      </div>
-                    </div>
-                  </div>  
-              	</div>
-              
-              	<hr>
--->    
-              	<h2 id="sec3">おすすめの本</h2>
-		<div class="row">
-			<div class="col-md-4"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=sabakaido-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=4797361840" style="width:300px;height:300px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
-			<div class="col-md-4"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=sabakaido-22&o=9&p=8&l=as1&m=amazon&f=ifr&ref=qf_sp_asin_til&asins=B00APVQ6MA" style="width:300px;height:300px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
-			<div class="col-md-4"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=sabakaido-22&o=9&p=8&l=as1&asins=4798116610&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:300px;height:300px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></div>
-              	</div>
-              
-              	<hr>
-<!--              <h4><a href="http://bootply.com/100993">Edit on Bootply</a></h4> -->
-              	<hr>
-              	
-      		</div> 
-  	</div>
-</div>
+
+                    <hr>
+                    <!--              <h4><a href="http://bootply.com/100993">Edit on Bootply</a></h4> -->
+                    <hr>
+
+                </div> 
+            </div>
+        </div>
 
 
 
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+        <!-- script references -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
