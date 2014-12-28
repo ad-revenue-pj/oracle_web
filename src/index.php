@@ -1,5 +1,5 @@
 <?php
-$app = require 'src/bootstrap.php';
+$app = require 'bootstrap.php';
 
 $app->get('/', function () use ($app) {
     echo $app->twig->render('index.html.twig');

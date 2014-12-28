@@ -1,4 +1,6 @@
 USER = $(shell whoami)
+CURRENT = $(shell pwd)
+TARGET = /var/www/html
 
 echo:
 	@echo 'hoge'
@@ -19,3 +21,6 @@ dev_install:
 	@sudo cp -r ./html/* /var/www/html/$(USER)/
 	@sudo cp -r ./src /var/www/html/$(USER)/
 	@sudo cp -r ./vendor /var/www/html/$(USER)/
+
+link_install:
+	@sudo ln -snf $(CURRENT)/src $(TARGET)/$(USER)

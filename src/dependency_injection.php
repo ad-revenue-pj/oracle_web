@@ -13,6 +13,6 @@ $app->container['log'] = function ($c) {
 };
  */
 $app->container['twig'] = function ($c) {
-    $loader = new Twig_Loader_Filesystem('src/templates');
+    $loader = new Twig_Loader_Filesystem('templates');
     return new Twig_Environment($loader);
 };
