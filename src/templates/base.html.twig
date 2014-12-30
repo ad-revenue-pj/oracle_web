@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="oracleのさいとだお!">
         <meta name="keywords" content="oracle,リファレンス">
-        <link href="/css/bootstrap_001.min.css" rel="stylesheet">
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/bootstrap-responsive.css" rel="stylesheet">
         <link href="/css/docs.min.css" rel="stylesheet">
         <!--[if lt IE 9]>
@@ -16,61 +16,61 @@
         <![endif]-->
     </head>
     <body>
-    {% block header %}
-    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="../" class="navbar-brand">Bootstrap</a>
-        </div>
-        <nav class="collapse navbar-collapse bs-navbar-collapse">
-        <ul class="nav navbar-nav">
-            <li>
-            <a href="../getting-started/">Getting started</a>
-            </li>
-            <li>
-            <a href="../css/">CSS</a>
-            </li>
-            <li>
-            <a href="../components/">Components</a>
-            </li>
-            <li class="active">
-            <a href="../javascript/">JavaScript</a>
-            </li>
-            <li>
-            <a href="../customize/">Customize</a>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>
-            <li><a href="http://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a></li>
-        </ul>
-        </nav>
-    </div>
-    </header>
-
-    <!--<header class="jumbotron subhead"> -->
-    <div class="bs-docs-header" id="content">
+        {% block header %}
+        <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
         <div class="container">
-            <h1>Oracle Reference</h1>
-            <p class="lead"></p>
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../" class="navbar-brand">Bootstrap</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                <a href="../getting-started/">Getting started</a>
+                </li>
+                <li>
+                <a href="../css/">CSS</a>
+                </li>
+                <li>
+                <a href="../components/">Components</a>
+                </li>
+                <li class="active">
+                <a href="../javascript/">JavaScript</a>
+                </li>
+                <li>
+                <a href="../customize/">Customize</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a></li>
+                <li><a href="http://blog.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a></li>
+            </ul>
+            </nav>
         </div>
-    </div>
-    <!--</header>-->
-    {% endblock %}
+        </header>
 
-    {% block menu %}
-    <div class="container bs-docs-container">
-        <div class="row">
-            <div class="col-md-3" role="complementary">
-                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
-                <ul class="nav bs-docs-sidenav">
-                    <li>
+        <!--<header class="jumbotron subhead"> -->
+        <div class="bs-docs-header" id="content">
+            <div class="container">
+                <a href="/"><h1>Oracle Reference</h1></a>
+                <p class="lead"></p>
+            </div>
+        </div>
+        <!--</header>-->
+        {% endblock %}
+
+        {% block menu %}
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div class="col-md-3" role="complementary">
+                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                    <ul class="nav bs-docs-sidenav">
+                        <li>
                         <a href="#js-overview">Overview</a>
                         <ul class="nav">
                             <li><a href="#js-individual-compiled">Individual or compiled</a></li>
@@ -81,47 +81,45 @@
                             <li><a href="#js-disabled">When JavaScript is disabled</a></li>
                             <li><a href="#callout-third-party-libs">Third-party libraries</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#transitions">Transitions</a></li>
-                    <li>
-                    <a href="#modals">Modal</a>
-                    <ul class="nav">
-                        <li><a href="#modals-examples">Examples</a></li>
-                        <li><a href="#modals-sizes">Sizes</a></li>
-                        <li><a href="#modals-remove-animation">Remove animation</a></li>
-                        <li><a href="#modals-related-target">Varying content based on trigger button</a></li>
-                        <li><a href="#modals-usage">Usage</a></li>
-                        <li><a href="#modals-options">Options</a></li>
-                        <li><a href="#modals-methods">Methods</a></li>
-                        <li><a href="#modals-events">Events</a></li>
+                        </li>
+                        <li><a href="#transitions">Transitions</a></li>
+                        <li>
+                        <a href="#modals">Modal</a>
+                        <ul class="nav">
+                            <li><a href="#modals-examples">Examples</a></li>
+                            <li><a href="#modals-sizes">Sizes</a></li>
+                            <li><a href="#modals-remove-animation">Remove animation</a></li>
+                            <li><a href="#modals-related-target">Varying content based on trigger button</a></li>
+                            <li><a href="#modals-usage">Usage</a></li>
+                            <li><a href="#modals-options">Options</a></li>
+                            <li><a href="#modals-methods">Methods</a></li>
+                            <li><a href="#modals-events">Events</a></li>
+                        </ul>
+                        </li>
                     </ul>
-                    </li>
-                </ul>
-                </nav>
-            </div>
-            <div class="col-md-9"> 
-                {% block contents %}
-                <div>
-                    デフォルトコンテンツ
+                    </nav>
                 </div>
-                {% endblock contents %}
+                <div class="col-md-9"> 
+                    {% block contents %}
+                    <div>
+                        デフォルトコンテンツ
+                    </div>
+                    {% endblock contents %}
+                </div>
             </div>
         </div>
-    </div>
-    {% endblock menu %}
+        {% endblock menu %}
 
-    {% block footer %}
-    <footer class="bs-docs-footer" role="contentinfo">
+        {% block footer %}
+        <footer class="bs-docs-footer" role="contentinfo">
         <div class="container">
             Someone famous in <cite title="Source Title">Source Title</cite>
         </div>
-    </footer>
-    {% endblock footer %}
+        </footer>
+        {% endblock footer %}
 
-    <!-- script references -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/docs.min.js"></script>
-    <script src="/js/scripts.js"></script>
-</body>
+        <!-- script references -->
+        {% include "parts/script.html" %}
+        {% include "parts/tracking.html" %}
+    </body>
 </html>

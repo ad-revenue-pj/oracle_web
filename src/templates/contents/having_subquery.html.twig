@@ -1,0 +1,75 @@
+<h1>HAVING句での副問合せ</h1>
+
+<h3>説明</h3>
+<p>副問合せは、WHERE句以外の次の句の中でも使うことが出来る</p>
+<ul>
+  <li>HAVING句</li>
+  <li>FROM句</li>
+  <li>SET句</li>
+  <li>ORDER BY句</li>
+</ul>
+
+<p>SELECT文が何行を戻すかによって比較条件を考えなければならない</p>
+
+<h3>サンプル</h3>
+<h4>単一行副問合せ<h4>
+<pre>
+SQL> SELECT 部門番号, AVG(給与) FROM 社員 GROUP BY 部門番号 
+HAVING AVG(給与) > (SELECT AVG(給与) FROM 社員);
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>部門番号</th> <th>AVG(給与)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td> <td>491666.667</td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+
+<h4>複数行副問合せ<h4>
+<pre>
+SQL> SELECT 給与 FROM 社員 WHERE 部門番号 = 20;
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>給与</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>180000</td>
+    </tr>
+    <tr>
+      <td>300000</td>
+    </tr>
+    <tr>
+      <td>210000</td>
+    </tr>
+  </tbody>
+</table>
+
+SQL> SELECT 部門番号, MIN(給与) FROM 社員 GROUP BY 部門番号 GROUP BY 部門番号
+HAVING MIN(給与) >ANY (SELECT 給与 FROM 社員 WHERE 部門番号 = 20);
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>部門番号</th> <th>MIN(給与)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30</td> <td>195000</td>
+    </tr>
+    <tr>
+      <td>10</td> <td>230000</td>
+    </tr>
+  </tbody>
+</table>
+</pre>
