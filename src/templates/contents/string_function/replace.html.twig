@@ -1,0 +1,37 @@
+<h1>REPLACE</h1>
+
+<h3>説明</h3>
+<pre>REPLACE(文字列１, 文字列２ [ , 文字列３ ])</pre>
+<kbd>REPLACE</kbd>は文字列１から文字列２を検索して、文字列３に置き換えます。<br>
+文字列３は省略可能で、デフォルト値は空文字です。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT REPLACE('カレーはごはん', 'ごはん', 'おかず') FROM DUAL;
+
+REPLACE('カレー
+---------------
+カレーはおかず
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="substr">SUBSTR</a></td>
+    <td class="col-md-11">- 文字列から指定の範囲の文字列を抜き出す</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="trim">TRIM</a></td>
+    <td class="col-md-11">- 文字列の前後から指定した文字列を除去する</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="lpad">LPAD</a></td>
+    <td class="col-md-11">- 文字列の左にパディング文字を入れる</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="rpad">RPAD</a></td>
+    <td class="col-md-11">- 文字列の右にパディング文字を入れる</td>
+  </tr>
+</tbody>
+</table>

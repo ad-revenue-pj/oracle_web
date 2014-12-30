@@ -1,0 +1,36 @@
+<h1>LENGTH</h1>
+
+<h3>説明</h3>
+<pre>LENGTH(文字列)</pre>
+<kbd>LENGTH</kbd>は文字列の文字数を返します。
+
+<h3>サンプル</h3>
+<pre>
+SQL> DESC 長さ
+
+名前           型
+-----------------------------
+CHAR           CHAR(10)
+VARCHAR        VARCHAR2(10)
+
+SQL> SELECT CHAR, LENGTH(CHAR), VARCHAR, LENGTH(VARCHAR) FROM 長さ;
+
+CHAR         LENGTH(CHAR)  VARCHAR     LENGTH(VARCHAR)
+-----------  ------------  ---------   ---------------
+もじれつ                6  もじれつ                  4
+MOJIRETSU              10  MOJIRETSU                 9
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="instr">INSTR</a></td>
+    <td class="col-md-11">- 文字列の出現位置を調べる</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="substr">SUBSTR</a></td>
+    <td class="col-md-11">- 文字列から指定の範囲の文字列を抜き出す</td>
+  </tr>
+</tbody>
+</table>

@@ -1,0 +1,32 @@
+<h1>INSTR</h1>
+
+<h3>説明</h3>
+<pre>INSTR(文字列１, 文字列２ [ , n , m ])</pre>
+<kbd>INSTR</kbd>は文字列１から文字列２を検索して、文字列２が出現した位置を返します。<br>
+n文字目から検索し、m番目に出現した位置を返すように指定できます。<br>
+nとmは省略化でデフォルト値は１です。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT INSTR('System Engineer', 'e') FROM DUAL;
+
+INSTR('SYSTEMENGINEER', 'E')
+----------------------------
+                           5
+
+SQL> SELECT INSTR('System Engineer', 'e', 8, 1) FROM DUAL;
+
+INSTR('SYSTEMENGINEER', 'E', 8, 1)
+----------------------------------
+                                13 
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="substr">SUBSTR</a></td>
+    <td class="col-md-11">- 文字列から指定の文字数だけ切り出す</td>
+  </tr>
+</tbody>
+</table>

@@ -1,0 +1,45 @@
+<h1>TRIM</h1>
+
+<h3>説明</h3>
+<pre>TRIM( [ LEADING | TRAILING | BOTH ] [ 文字 FROM ] 文字列 )</pre>
+<kbd>TRIM</kbd>は、文字列の先頭(LEADING)か後方(TRAILING)か両方(BOTH)から文字を切り取って返します。<br>
+切り取る文字は省略可能で、デフォルト値は空白です。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT TRIM(LEADING 'し' FROM 'しんぶんし') FROM DUAL;
+
+TRIM(LEA
+--------
+んぶんし
+
+SQL> SELECT TRIM(TRAILING 'し' FROM 'しんぶんし') FROM DUAL;
+
+TRIM(LEA
+--------
+しんぶん
+
+SQL> SELECT TRIM(BOTH 'し' FROM 'しんぶんし') FROM DUAL;
+
+TRIM(L
+--------
+んぶん
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="rpad">RPAD</a></td>
+    <td class="col-md-11">- 文字列の右にパディング文字を入れる</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="lpad">LPAD</a></td>
+    <td class="col-md-11">- 文字列の左にパディング文字を入れる</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="replace">REPLACE</a></td>
+    <td class="col-md-11">- 検索文字列を指定した文字列で置き換える</td>
+  </tr>
+</tbody>
+</table>
