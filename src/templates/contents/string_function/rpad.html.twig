@@ -1,0 +1,33 @@
+<h1>RPAD</h1>
+
+<h3>説明</h3>
+<pre>RPAD( 文字列, n [ , パディング文字 ] )</pre>
+<kbd>RPAD</kbd>は、文字列がn桁になるように右側にパディング文字を入れて返します。<br>
+パディング文字は省略できて、デフォルトは空白です。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT RPAD('クラス', 8, '*') FROM 身体測定;
+
+LPAD('クラス', 8, '*')
+----------------------
+ぞう****
+ぞう****
+きりん**
+きりん**
+きりん**
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="lpad">LPAD</a></td>
+    <td class="col-md-11">- 文字列の左にパディング文字を入れる</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="replace">REPLACE</a></td>
+    <td class="col-md-11">- 検索文字列を指定した文字列で置き換える</td>
+  </tr>
+</tbody>
+</table>

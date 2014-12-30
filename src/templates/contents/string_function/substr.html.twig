@@ -1,0 +1,38 @@
+<h1>SUBSTR</h1>
+
+<h3>説明</h3>
+<pre>SUBSTR(文字列１, n [ , m ])</pre>
+<kbd>SUBSTR</kbd>は文字列からn文字目からm文字目の範囲の文字列を抜き出して返します。<br>
+mを省略した場合は、n文字目以降すべてを返します。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT SUBSTR('System Engineer', 8) FROM DUAL;
+
+SUBSTR('
+--------
+Engineer
+
+SQL> SELECT INSTR('System Engineer', 8, 5) FROM DUAL;
+
+SUBST
+-----
+Engin
+
+-- nに負の値を入れた場合
+SQL> SELECT INSTR('System Engineer', -5) FROM DUAL;
+
+SUBST
+-----
+ineer
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="instr">INSTR</a></td>
+    <td class="col-md-11">- 文字列の出現位置を調べる</td>
+  </tr>
+</tbody>
+</table>
