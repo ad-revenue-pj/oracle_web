@@ -1,0 +1,46 @@
+<h1>NULL条件</h1>
+
+<h3>説明</h3>
+NULL値に一致する行を検索する場合には、IS NULL条件を使用する。
+
+<h4>NULL値の行を検索する場合</h4>
+<pre>
+
+SQL> SELECT 社員名, 給与, 歩合給 FROM 社員 WHERE 歩合給 IS NULL;
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+       <th>社員名</th> <th>給与</th> <th>歩合給</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>佐藤</td> <td>1800000</td> <td></td>
+    </tr>
+    <tr>
+      <td>田中</td> <td>1000000</td> <td></td>
+    </tr>
+    <tr>
+      <td>鈴木</td> <td>3500000</td> <td></td>
+    </tr>
+    <tr>
+      <td>高橋</td> <td>4000000</td> <td></td>
+    </tr>
+  </tbody>
+</table>
+</pre>
+
+
+<h4>NULL値の比較に等号や不等号を使用した場合</h4>
+<pre>
+
+SQL> SELECT 社員名, 給与, 歩合給 FROM 社員 WHERE 歩合給 = NULL;
+
+レコードが選択されませんでした。
+
+SQL> SELECT 社員名, 給与, 歩合給 FROM 社員 WHERE 歩合給 <> NULL;
+
+レコードが選択されませんでした。
+
+</pre>
