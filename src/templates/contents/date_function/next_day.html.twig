@@ -1,0 +1,28 @@
+<h1>NEXT_DAY</h1>
+
+<h3>説明</h3>
+<pre>NEXT_DAY( 日付 , 曜日 )</pre>
+<kbd>NEXT_DAY</kbd>は次の指定曜日がくる日付を返します。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT NEXT_DAY('14-12-30', '水曜日') FROM DUAL;
+
+NEXT_DAY
+--------
+14-12-31
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="add_months">ADD_MONTHS</a></td>
+    <td class="col-md-11">- 日付に指定した月を加算した日付を返す</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="last_day">LAST_DAY</a></td>
+    <td class="col-md-11">- 指定した日付の月末日を返す</td>
+  </tr>
+</tbody>
+</table>
