@@ -97,11 +97,11 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading"><h5>データの反映およびオート</h5></div>
                                 <div class="panel-body">
-                                    <div>行の選択</div>
-                                    <div>比較条件</div>
-                                    <div>NULL条件</div>
-                                    <div>IS NOT NULL条件</div>
-                                    <div>行の並べ替え(ソート)</div>
+                                    <div><a href="contents/select_line">行の選択</a></div>
+                                    <div><a href="contents/comparison_condition">比較条件</a></div>
+                                    <div><a href="contents/null_condition">NULL条件</a></div>
+                                    <div><a href="contents/is_not_null_condition">IS NOT NULL条件</a></div>
+                                    <div><a href="contents/sort_of_row">行の並べ替え(ソート)</a></div>
                                     <div></div>
                                 </div>
                             </div>
@@ -163,11 +163,12 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading"><h5>副問い合わせを使用した問い合わせの解決</h5></div>
                                 <div class="panel-body">
-                                    <div>副問合せの使用方法</div>
-                                    <div>単一行副問合せ</div>
-                                    <div>複数行副問合せ</div>
-                                    <div>NULLを戻す副問合せ</div>
-                                    <div>HAVING句での副問合せ</div>
+                                    <div><a href="contents/use_of_subquery">副問合せの使用方法</a></div>
+                                    <div><a href="contents/single_line_subquery">単一行副問合せ</a></div>
+                                    <div><a href="contents/multiple_line_subquery">複数行副問合せ</a></div>
+                                    <div><a href="contents/return_null_subquery">NULLを戻す副問合せ</a></div>
+                                    <div><a href="contents/having_subquery">HAVING句での副問合せ</a></div>
+                                    <a href="contents/having_subquery"><div>HAVING句での副問合せ</div></a>
                                     <div></div>
                                 </div>
                             </div>
@@ -293,11 +294,8 @@
             </div>
         </div>
 
-
-
         <!-- script references -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
+        {% include "parts/script.html" %}
+        {% include "parts/tracking.html" %}
     </body>
 </html>

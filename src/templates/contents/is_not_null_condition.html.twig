@@ -1,0 +1,29 @@
+<h1>IS NOT NULL条件</h1>
+
+<h3>説明</h3>
+IS NOT NULLは、NULL値でない行を検索する。
+
+<h4>NULL値以外の行を検索する場合</h4>
+<pre>
+
+SQL> SELECT 社員名, 給与, 歩合給 FROM 社員 WHERE 歩合給 IS NOT NULL;
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+       <th>社員名</th> <th>給与</th> <th>歩合給</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>佐藤</td> <td>2300000</td> <td>50000</td>
+    </tr>
+    <tr>
+      <td>山田</td> <td>3900000</td> <td>140000</td>
+    </tr>
+    <tr>
+      <td>菊池</td> <td>1200000</td> <td>300000</td>
+    </tr>
+  </tbody>
+</table>
+</pre>
