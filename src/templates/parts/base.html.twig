@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='ja'>
+    <!-- head -->
+    {% include "parts/head.html" %}
+
+    <!-- body -->
+    <body>
+
+        <!-- header -->
+        {% block header %}
+            {% include "parts/header.html" %}
+        {% endblock %}
+
+        <!-- contents -->
+        <div class="container bs-docs-container">
+            <div class="row">
+                <div> 
+                    {% block contents %}
+                    <div>
+                        デフォルトコンテンツ
+                    </div>
+                    {% endblock contents %}
+                </div>
+                {% include "parts/ad.html" %}
+            </div>
+        </div>
+
+        <!-- footer -->
+        {% block footer %}
+            {% include "parts/footer.html" %}
+        {% endblock footer %}
+
+        <!-- script references -->
+        {% include "parts/script.html" %}
+        {% include "parts/tracking.html" %}
+    </body>
+
+</html>
