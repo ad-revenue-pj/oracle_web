@@ -1,0 +1,58 @@
+<h1>データ型</h1>
+
+<h3>説明</h3>
+<p>Oracleで使用可能なデータ型は、文字型、数値型、日付型、バイナリ型などが 提供されています。</p>
+<p>主なデータ型は、次のとおりです。</p>
+
+<h4>主なデータ型</h4>
+<table class="table table-striped">
+  <thead>
+    <tr>
+       <th>データ型</th> <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHAR(size)</td> <td>固定長文字データ</td>
+    </tr>
+    <tr>
+      <td>VARCHAR2(size)</td> <td></td>
+    </tr>
+    <tr>
+      <td>LONG</td> <td></td>
+    </tr>
+    <tr>
+      <td>CLOB</td> <td></td>
+    </tr>
+    <tr>
+      <td>NUMBER(p, s)</td> <td></td>
+    </tr>
+    <tr>
+      <td>DATE</td> <td></td>
+    </tr>
+    <tr>
+      <td>RAW および LONG RAW</td> <td></td>
+    </tr>
+    <tr>
+      <td>BLOB</td> <td></td>
+    </tr>
+    <tr>
+      <td>BFILE</td> <td>外部ファイルに格納されるバイナリデータ(最大4GB)</td>
+    </tr>
+    <tr>
+      <td>ROWID</td> <td>表内の行の一意のアドレスと表す。Base64の記数法</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>ネーミング規約</h4>
+<p>データベースオブジェクトは、スキーマ内で一意でなければならない。</p>
+<p>列名、表名などオブジェクト名のネーミングルールを次に示す</p>
+<ul>
+  <li>文字で開始する必要がある</li>
+  <li>長さ30バイト以下</li>
+  <li>英数字、記号($_#)が使用可能</li>
+  <li>Oracleの予約後は使用できない(例：CREATE、TABLE）</li>
+  <li>同一のスキーマ内で一意な表名、同一表内で一意な列名でなければならない</li>
+</ul>
+</pre>
