@@ -1,0 +1,39 @@
+<h1>MONTHS_BETWEEN</h1>
+
+<h3>説明</h3>
+<pre>MONTHS_BETWEEN( 日付 , 日付 )</pre>
+<kbd>MONTHS_BETWEEN(</kbd>は日付間の月数を返します。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT MONTHS_BETWEEN('14-12-30', '14-1-30') FROM DUAL;
+
+MONTHS_BETWEEN('14-12-30', '14-1-30')
+-------------------------------------
+                                   11
+
+
+SQL> SELECT MONTHS_BETWEEN('14-1-30', '14-12-30') FROM DUAL;
+
+MONTHS_BETWEEN('14-1-30', '14-12-30')
+-------------------------------------
+                                  -11
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="add_months">ADD_MONTHS</a></td>
+    <td class="col-md-11">- 日付に指定した月を加算した日付を返す</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="next_day">NEXT_DAY</a></td>
+    <td class="col-md-11">- 次の指定曜日の日付を返す</td>
+  </tr>
+  <tr>
+    <td class="col-md-1"><a href="last_day">LAST_DAY</a></td>
+    <td class="col-md-11">- 指定した日付の月末日を返す</td>
+  </tr>
+</tbody>
+</table>

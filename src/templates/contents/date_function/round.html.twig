@@ -1,0 +1,25 @@
+<h1>ROUND</h1>
+
+<h3>説明</h3>
+<pre>ROUND( 日付 [ , 書式 ] )</pre>
+<kbd>ROUND</kbd>は、日付を四捨五入して返します。<br>
+書式は省略可能でデフォルトはDD(日にち)です。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT SYSDATE, ROUND(SYSDATE), ROUND(SYSDATE, 'MONTH'), ROUND(SYSDATE, 'YEAR') FROM DUAL;
+
+SYSDATE              ROUND(SYSDATE)      ROUND(SYSDATE, 'MONTH') ROUND(SYSDATE, 'YEAR')
+-------------------  ------------------- ----------------------- ----------------------
+2014-12-31 14:39:50  2015-01-01 00:00:00 2015-01-01 00:00:00     2015-01-01 00:00:00
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+  <tr>
+    <td class="col-md-1"><a href="trunc">TRUNC</a></td>
+    <td class="col-md-11">- 日付を切り捨てる</td>
+  </tr>
+<tbody>
+</tbody>
+</table>

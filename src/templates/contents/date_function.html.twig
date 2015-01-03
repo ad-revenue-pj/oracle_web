@@ -1,38 +1,45 @@
-<h1>数値関数</h1>
+<h1>日付関数</h1>
 
 <h3>説明</h3>
-グループ関数は単一行の結果ではなく、行のグループに基づく結果を返します。
+日付関数は日付や数値を受け取って、日付または数値を返します。<br>
+日付データは、算術演算子を用いて計算することもできます。
+<ul>
+  <li>日付 + 数値: 日付に日数を足した日付を返す</li>
+  <li>日付 - 数値: 日付から日数を引いた日付を返す</li>
+  <li>日付 - 日付: 日付間の日数を返す</li>
+  <li>日付 + 数値/24: 日付から時間を足した日付を返す</li>
+</ul>
 
 <h3>目次</h3>
 <table class="table table-striped">
 <tbody>
   <tr>
-    <td class="col-md-1"><a href="group/count">COUNT</a></td>
-    <td class="col-md-11">- 件数を求める</td>
+    <td class="col-md-1"><a href="date_function/add_months">ADD_MONTHS</a></td>
+    <td class="col-md-11">- 日付に指定した月を加算した日付を返す</td>
   </tr>
   <tr>
-    <td class="col-md-1"><a href="group/max">MAX</a></td>
-    <td class="col-md-11">- 最大値を求める</td>
+    <td class="col-md-1"><a href="date_function/last_day">LAST_DAY</a></td>
+    <td class="col-md-11">- 指定した日付の月末日を返す</td>
   </tr>
   <tr>
-    <td class="col-md-1"><a href="group/min">MIN</a></td>
-    <td class="col-md-11">- 最小値を求める</td>
+    <td class="col-md-1"><a href="date_function/next_day">NEXT_DAY</a></td>
+    <td class="col-md-11">- 次の指定曜日の日付を返す</td>
   </tr>
   <tr>
-    <td class="col-md-1"><a href="group/sum">SUM</a></td>
-    <td class="col-md-11">- 合計値を求める</td>
+    <td class="col-md-1"><a href="date_function/months_between">MONTHS_BETWEEN</a></td>
+    <td class="col-md-11">- 指定した２つの日付間の月数を返す</td>
   </tr>
   <tr>
-    <td class="col-md-1"><a href="group/avg">AVG</a></td>
-    <td class="col-md-11">- 平均値を求める</td>
+    <td class="col-md-1"><a href="date_function/sysdate">SYSDATE</a></td>
+    <td class="col-md-11">- サーバの現在日時を返す</td>
   </tr>
   <tr>
-    <td class="col-md-1"><a href="group/variance">VARIANCE</a></td>
-    <td class="col-md-11">- 分散を求める</td>
+    <td class="col-md-1"><a href="date_function/trunc">TRUNC</a></td>
+    <td class="col-md-11">- 日付を切り捨てる</td>
   </tr>
   <tr>
-    <td class="col-md-1"><a href="group/stddev">STDDEV</a></td>
-    <td class="col-md-11">- 標準偏差を求める</td>
+    <td class="col-md-1"><a href="date_function/round">ROUND</a></td>
+    <td class="col-md-11">- 日付を四捨五入する</td>
   </tr>
 </tbody>
 </table>

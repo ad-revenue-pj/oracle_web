@@ -1,0 +1,25 @@
+<h1>TRUNC</h1>
+
+<h3>説明</h3>
+<pre>TRUNC( 日付 [ , 書式 ] )</pre>
+<kbd>TRUNC</kbd>は、日付を切り捨てして返します。<br>
+書式は省略可能でデフォルトはDD(日にち)です。
+
+<h3>サンプル</h3>
+<pre>
+SQL> SELECT SYSDATE, TRUNC(SYSDATE), TRUNC(SYSDATE, 'MONTH'), TRUNC(SYSDATE, 'YEAR') FROM DUAL;
+
+SYSDATE              TRUNC(SYSDATE)      TRUNC(SYSDATE, 'MONTH') TRUNC(SYSDATE, 'YEAR')
+-------------------  ------------------- ----------------------- ----------------------
+2014-12-31 14:39:50  2015-12-31 00:00:00 2015-12-01 00:00:00     2014-01-01 00:00:00
+</pre>
+
+<h3>参考</h3>
+<table class="table table-striped">
+<tbody>
+  <tr>
+    <td class="col-md-1"><a href="round">ROUND</a></td>
+    <td class="col-md-11">- 日付を四捨五入する</td>
+  </tr>
+</tbody>
+</table>
