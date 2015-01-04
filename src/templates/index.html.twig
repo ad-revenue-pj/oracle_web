@@ -1,233 +1,226 @@
 {% extends "parts/base.html.twig" %}
 
 {% block contents %}
-<div class="col-md-12">
-    <h2 id="sec1">カテゴリ一覧</h2>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>SQLの実行環境</h5></div>
-                <div class="panel-body">
-                    <div>実行環境の確認</div>
-                    <div>SQL*PLUSの起動</div>
-                    <div>演算用ユーザの作成</div>
-                    <div>演算用の表の作成</div>
-                    <div>表に含まれる列の確認</div>
-                    <div>SQL分の編集</div>
-                    <div>置換変数</div>
-                </div>
+<h2 id="sec1">カテゴリ一覧</h2>
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>SQLの実行環境</h5></div>
+            <div class="panel-body">
+                <div>実行環境の確認</div>
+                <div>SQL*PLUSの起動</div>
+                <div>演算用ユーザの作成</div>
+                <div>演算用の表の作成</div>
+                <div>表に含まれる列の確認</div>
+                <div>SQL分の編集</div>
+                <div>置換変数</div>
             </div>
         </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>リレーショナルデータベース</h5></div>
-                <div class="panel-body">
-                    <div>リレーショナルアプローチ</div>
-                    <div>リレーショナルデータベースの用語</div>
-                    <div>SQLとは</div>
-                    <div>SQL文の記述</div>
-                    <div>確認問題</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>SQLのSELECT文を使用したデータの取得</h5></div>
-                <div class="panel-body">
-                    <div>SELECT文の機能</div>
-                    <div>SELECT分の基本構文</div>
-                    <div>算術式</div>
-                    <div>NULLを含む算術式</div>
-                    <div>文字列の連結</div>
-                    <div>代替引用符(q)演算子</div>
-                    <div>列見出しのデフォルト</div>
-                    <div>列見出しの設定</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>データの反映およびオート</h5></div>
-                <div class="panel-body">
-                    <div><a href="contents/select_line">行の選択</a></div>
-                    <div><a href="contents/comparison_condition">比較条件</a></div>
-                    <div><a href="contents/null_condition">NULL条件</a></div>
-                    <div><a href="contents/is_not_null_condition">IS NOT NULL条件</a></div>
-                    <div><a href="contents/sort_of_row">行の並べ替え(ソート)</a></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>単一行関数を使用した出力のカスタマイズ</h5></div>
-                <div class="panel-body">
-                    <div>関数のタイプ</div>
-                    <!-- <div>数値関数</div> -->
-                    <div><a href="contents/numeric_function">数値関数</a></div>
-                    <div><a href="contents/string_function">文字関数</a></div>
-                    <div><a href="contents/date_function">日付関数</a></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>変換関数と条件式の使用方法</h5></div>
-                <div class="panel-body">
-                    <div>変換関数</div>
-                    <div>書式モデル</div>
-                    <div>RR日付書式</div>
-                    <div>汎用関数</div>
-                    <div>条件式</div>
-                    <div>関数のネスト</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>グループ関数を使用した集計データのレポート</h5></div>
-                <div class="panel-body">
-                    <!-- <div>グループ関数</div> -->
-                    <div><a href="contents/group">グループ関数</a></div>
-                    <div><a href="contents/group_by_having">検索結果のグループ化(GROUP BY句とHAVING句)</a></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>複数の表からのデータ表示</h5></div>
-                <div class="panel-body">
-                    <div>結合</div>
-                    <div>SQL:1999構文を使用した表の結合</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>副問い合わせを使用した問い合わせの解決</h5></div>
-                <div class="panel-body">
-                    <div><a href="contents/use_of_subquery">副問合せの使用方法</a></div>
-                    <div><a href="contents/single_line_subquery">単一行副問合せ</a></div>
-                    <div><a href="contents/multiple_line_subquery">複数行副問合せ</a></div>
-                    <div><a href="contents/return_null_subquery">NULLを戻す副問合せ</a></div>
-                    <div><a href="contents/having_subquery">HAVING句での副問合せ</a></div>
-                    <a href="contents/having_subquery"><div>HAVING句での副問合せ</div></a>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>集合演算子の使用</h5></div>
-                <div class="panel-body">
-                    <div>集合演算子とは</div>
-                    <div>UNIONおよびUNION ALL演算子の使用方法</div>
-                    <div>MINUS演算子の使用方法</div>
-                    <div>INTERSECT演算子の使用方法</div>
-                    <div>集合演算子の使用ガイドライン</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>データの操作</h5></div>
-                <div class="panel-body">
-                    <div>INSERT分の基本構文</div>
-                    <div>UPDATE文の基本構文</div>
-                    <div>DELETE文の基本構文</div>
-                    <div>TRUNCATE(表切り捨て)文</div>
-                    <div>副問合せを用いたINSERT文</div>
-                    <div>副問合せを用いたUPDATE文</div>
-                    <div>副問合せを用いたDELETE文</div>
-                    <div>トランザクションとは</div>
-                    <div>トランザクションを制御するコマンド</div>
-                    <div>暗黙的なトランザクション処理</div>
-                    <div>読取りの一貫性</div>
-                    <div>ロック</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>表の作成と管理</h5></div>
-                <div class="panel-body">
-                    <div><a href="contents/database_object">データベースオブジェクト</a></div>
-                    <div><a href="contents/schema">スキーマ</a></div>
-                    <div><a href="contents/table">表</a></div>
-                    <div><a href="contents/data_type">データ型</a></div>
-                    <div><a href="contents/constraint">制約</a></div>
-                    <div><a href="contents/creaet_table_as">既存表からの新しい表の作成</a></div>
-                    <div><a href="contents/alter_table">表構造の変更</a></div>
-                    <div><a href="contents/delete_table">表の削除</a></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>表以外のスキーマオブジェクトの作成と管理</h5></div>
-                <div class="panel-body">
-                    <div>ビュー</div>
-                    <div>順序</div>
-                    <div>索引</div>
-                    <div>シノニム</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>高度な問い合わせ</h5></div>
-                <div class="panel-body">
-                    <div>単一列単一行副問合せ</div>
-                    <div>インラインビュー</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>ORACLE独自構文を使用した結合</h5></div>
-                <div class="panel-body">
-                    <div>結合</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h5>データディクショナリビューによるオブジェクトの管理</h5></div>
-                <div class="panel-body">
-                    <div>データディクショナリ</div>
-                    <div>データディクショナリの問合せ</div>
-                    <div>表にコメントを追加</div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-
     </div>
-</div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>リレーショナルデータベース</h5></div>
+            <div class="panel-body">
+                <div>リレーショナルアプローチ</div>
+                <div>リレーショナルデータベースの用語</div>
+                <div>SQLとは</div>
+                <div>SQL文の記述</div>
+                <div>確認問題</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>SQLのSELECT文を使用したデータの取得</h5></div>
+            <div class="panel-body">
+                <div>SELECT文の機能</div>
+                <div>SELECT分の基本構文</div>
+                <div>算術式</div>
+                <div>NULLを含む算術式</div>
+                <div>文字列の連結</div>
+                <div>代替引用符(q)演算子</div>
+                <div>列見出しのデフォルト</div>
+                <div>列見出しの設定</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>データの反映およびオート</h5></div>
+            <div class="panel-body">
+                <div><a href="contents/select_line">行の選択</a></div>
+                <div><a href="contents/comparison_condition">比較条件</a></div>
+                <div><a href="contents/null_condition">NULL条件</a></div>
+                <div><a href="contents/is_not_null_condition">IS NOT NULL条件</a></div>
+                <div><a href="contents/sort_of_row">行の並べ替え(ソート)</a></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>単一行関数を使用した出力のカスタマイズ</h5></div>
+            <div class="panel-body">
+                <div>関数のタイプ</div>
+                <!-- <div>数値関数</div> -->
+                <div><a href="contents/numeric_function">数値関数</a></div>
+                <div><a href="contents/string_function">文字関数</a></div>
+                <div><a href="contents/date_function">日付関数</a></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>変換関数と条件式の使用方法</h5></div>
+            <div class="panel-body">
+                <div>変換関数</div>
+                <div>書式モデル</div>
+                <div>RR日付書式</div>
+                <div>汎用関数</div>
+                <div>条件式</div>
+                <div>関数のネスト</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>グループ関数を使用した集計データのレポート</h5></div>
+            <div class="panel-body">
+                <!-- <div>グループ関数</div> -->
+                <div><a href="contents/group">グループ関数</a></div>
+                <div><a href="contents/group_by_having">検索結果のグループ化(GROUP BY句とHAVING句)</a></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>複数の表からのデータ表示</h5></div>
+            <div class="panel-body">
+                <div>結合</div>
+                <div>SQL:1999構文を使用した表の結合</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>副問い合わせを使用した問い合わせの解決</h5></div>
+            <div class="panel-body">
+                <div><a href="contents/use_of_subquery">副問合せの使用方法</a></div>
+                <div><a href="contents/single_line_subquery">単一行副問合せ</a></div>
+                <div><a href="contents/multiple_line_subquery">複数行副問合せ</a></div>
+                <div><a href="contents/return_null_subquery">NULLを戻す副問合せ</a></div>
+                <div><a href="contents/having_subquery">HAVING句での副問合せ</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>集合演算子の使用</h5></div>
+            <div class="panel-body">
+                <div>集合演算子とは</div>
+                <div>UNIONおよびUNION ALL演算子の使用方法</div>
+                <div>MINUS演算子の使用方法</div>
+                <div>INTERSECT演算子の使用方法</div>
+                <div>集合演算子の使用ガイドライン</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>データの操作</h5></div>
+            <div class="panel-body">
+                <div>INSERT分の基本構文</div>
+                <div>UPDATE文の基本構文</div>
+                <div>DELETE文の基本構文</div>
+                <div>TRUNCATE(表切り捨て)文</div>
+                <div>副問合せを用いたINSERT文</div>
+                <div>副問合せを用いたUPDATE文</div>
+                <div>副問合せを用いたDELETE文</div>
+                <div>トランザクションとは</div>
+                <div>トランザクションを制御するコマンド</div>
+                <div>暗黙的なトランザクション処理</div>
+                <div>読取りの一貫性</div>
+                <div>ロック</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>表の作成と管理</h5></div>
+            <div class="panel-body">
+                <div><a href="contents/database_object">データベースオブジェクト</a></div>
+                <div><a href="contents/schema">スキーマ</a></div>
+                <div><a href="contents/table">表</a></div>
+                <div><a href="contents/data_type">データ型</a></div>
+                <div><a href="contents/constraint">制約</a></div>
+                <div><a href="contents/creaet_table_as">既存表からの新しい表の作成</a></div>
+                <div><a href="contents/alter_table">表構造の変更</a></div>
+                <div><a href="contents/delete_table">表の削除</a></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>表以外のスキーマオブジェクトの作成と管理</h5></div>
+            <div class="panel-body">
+                <div>ビュー</div>
+                <div>順序</div>
+                <div>索引</div>
+                <div>シノニム</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>高度な問い合わせ</h5></div>
+            <div class="panel-body">
+                <div>単一列単一行副問合せ</div>
+                <div>インラインビュー</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>ORACLE独自構文を使用した結合</h5></div>
+            <div class="panel-body">
+                <div>結合</div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5>データディクショナリビューによるオブジェクトの管理</h5></div>
+            <div class="panel-body">
+                <div>データディクショナリ</div>
+                <div>データディクショナリの問合せ</div>
+                <div>表にコメントを追加</div>
+                
+            </div>
+        </div>
+    </div>
 {% endblock %}
