@@ -5,3 +5,8 @@ header {
 a:hover {
     text-decoration:none;
 }
+
+.bs-docs-header h1 a {
+    font-weight: 100;
+    color: #fff;
+}

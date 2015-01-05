@@ -12,22 +12,32 @@
         {% endblock %}
 
         <!-- contents -->
-        <div class="container bs-docs-container">
+        <div class="container-fuild">
             <div class="row">
-                <div> 
+                <div class="col-md-2 sidebar">
+                    {% block sidebar %}
+                        {% include "parts/sidebar.html" %}
+                    {% endblock %}
+                </div>
+
+                <div class="col-md-10 main">
                     {% block contents %}
                     <div>
                         デフォルトコンテンツ
                     </div>
                     {% endblock contents %}
+
+                    {% block ad %}
+                        {% include "parts/ad.html" %}
+                    {% endblock %}
                 </div>
-                {% include "parts/ad.html" %}
             </div>
+
         </div>
 
         <!-- footer -->
         {% block footer %}
-            {% include "parts/footer.html" %}
+        {% include "parts/footer.html" %}
         {% endblock footer %}
 
         <!-- script references -->
